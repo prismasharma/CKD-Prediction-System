@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CKD Prediction System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader"></div>
+            <h2>CKD Prediction System</h2>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h2>CKD Classification System</h2>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#predict">Predict</a>
+            <a href="#team">Team</a>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <h1>Chronic Kidney Disease Classification</h1>
+        <p>AI-Based Early Detection Tool for CKD Screening</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h2>About CKD</h2>
+        <p>Chronic Kidney Disease (CKD) is a serious health condition. Early classification using Machine Learning can prevent severe complications and help doctors make quick decisions.</p>
+    </section>
+
+    <!-- FORM -->
+    <section class="form-section" id="predict">
+        <h2>Enter Patient Details</h2>
+        <form id="ckdForm">
+            <div class="medical-form-wrapper">
+                <div class="medical-form-scroll">
+                    <!-- Numeric Inputs -->
+                    <input type="number" placeholder="Age">
+                    <input type="number" placeholder="Blood Pressure">
+                    <input type="number" placeholder="Specific Gravity">
+                    <input type="number" placeholder="Albumin">
+                    <input type="number" placeholder="Sugar">
+                    <input type="number" placeholder="Blood Glucose Random">
+                    <input type="number" placeholder="Blood Urea">
+                    <input type="number" placeholder="Serum Creatinine">
+                    <input type="number" placeholder="Sodium">
+                    <input type="number" placeholder="Potassium">
+                    <input type="number" placeholder="Hemoglobin">
+                    <input type="number" placeholder="Packed Cell Volume">
+                    <input type="number" placeholder="WBC Count">
+                    <input type="number" placeholder="RBC Count">
+
+                    <!-- Categorical Inputs -->
+                    <select>
+                        <option>Hypertension</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                    <select>
+                        <option>Diabetes Mellitus</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                    <select>
+                        <option>Coronary Artery Disease</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                    <select>
+                        <option>Appetite</option>
+                        <option>Good</option>
+                        <option>Poor</option>
+                    </select>
+                    <select>
+                        <option>Pedal Edema</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                    <select>
+                        <option>Anemia</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+
+                    <!-- NEW categorical inputs -->
+                    <select>
+                        <option>RBC</option>
+                        <option>Normal</option>
+                        <option>Abnormal</option>
+                    </select>
+                    <select>
+                        <option>PC</option>
+                        <option>Normal</option>
+                        <option>Abnormal</option>
+                    </select>
+                    <select>
+                        <option>PCC</option>
+                        <option>Normal</option>
+                        <option>Abnormal</option>
+                    </select>
+                    <select>
+                        <option>BA</option>
+                        <option>Normal</option>
+                        <option>Abnormal</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" class="predict-btn">Predict CKD</button>
+        </form>
+    </section>
+
+    <!-- RESULT -->
+    <section class="result">
+        <h2>Prediction Result</h2>
+        <div id="resultBox">Result will appear here</div>
+        <div class="risk-bar">
+            <div class="risk-fill"></div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team" id="team">
+        <h2>Project Team</h2>
+        <p>Anjali Thapa | Nirmal Khatri | Prisma Sharma | Pujan Burlakoti</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
